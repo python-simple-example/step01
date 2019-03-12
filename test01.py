@@ -1,5 +1,5 @@
 '''
-Try hello world 파이썬 197
+Try hello world 파이썬 p.0 ~ p.187
 '''
 ko = '가나다'
 en = 'ABC'
@@ -9,6 +9,10 @@ print(ko, '-', en)
 print('{}-{}'.format(ko, en))
 
 ens = ['a','b','c']
+ens2 = ['c', 'd', 6]
+
+tot_ens = ens + ens2
+print(tot_ens)
 
 for en in ens :
     print(en)
@@ -30,3 +34,10 @@ print(datetime.date.today())
 import random
 random.shuffle(ens)
 print(ens)
+
+ens.append('d')
+print(ens)
+
+print(ens.pop(len(ens)-1))
+print(ens)
+
